@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    font-family: Roboto;
+    margin: 0 75px; /* Removed the top 20px margin so the header touches the top */
+}
+h3{
+    margin: 10px 10px 10px 0px;
+}
+p{
+    margin: 0px 10px 10px 0px;
+    text-align: justify;
+    line-height: 1.8;
+}
+#subtopic1, #subtopic2, #subtopic3, #subtopic4, #subtopic5, #subtopic6, #subtopic7 {
+    scroll-margin-top: 120px; /* Adjust this value to match the height of your header */
+}
+.header{
+    height: auto; /* Changed from 100% to auto so it doesn't take up the whole screen */
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white; /* Necessary so content doesn't show through while scrolling */
+    z-index: 1000; /* Keeps it above the scrolling content */
+    border-bottom: 1px solid #eee; /* Optional: adds a nice separator */
+}
+.body-content{
+    display: flex;
+    flex: 1;
+}
+.nav {
+    width: 250px;
+    height: fit-content; /* Important: sticky needs the element to be shorter than the container */
+    margin: 20px;
+    min-width: 100px;
+    position: sticky;
+    top: 100px; /* Adjust this value based on the height of your header */
+    align-self: flex-start; /* Ensures the nav doesn't stretch to the full height of the body */
+}
+.content{
+    width: calc(100% - 300px);
+    padding: 30px;
+    min-width: 250px;
+    max-width: 1240px;
+}
+.topics{
+  list-style-type: none;
+  display: flex;  
+  flex-direction:column;    
+  gap: 20px;  
+  list-style: none;  
+  padding: 0;
+}
+.participate{
+    margin: 20px;
+    line-height: 1.8;
+}
+.nav-link{
+    margin: 10px 10px 10px 0px;
+    color: black;
+    text-decoration: none;
+}
+.nav-link:hover {
+  color: #007bff;
+}
+.places{
+    text-decoration: underline;
+    margin: 20px 0px 0px 0px;
+}
+.note{
+    margin: 10px 10px 10px 100px;
+}
+.univ{
+    height: 80px;
+    width: 200px;
+    background-color: #D23D33;
+    border-radius: 10px;
+    margin: 20px 10px 10px 0px;
+}
+.hospital{
+    height: 80px;
+    width: 200px;
+    background-color: #081D4F;
+    border-radius: 10px;
+    margin: 20px 10px 10px 0px;
+}
+.next-steps {
+  width: 200px;
+  padding: 10px;
+  margin: 20px 10px 0px 0px;
+  border: 1px solid #e0e0e0; 
+  border-radius: 15px;      
+  text-align: center;
+}
+.next-steps ol {
+  text-align: left;
+  padding-left: 20px;
+}
+.next-steps li {
+  margin-bottom: 10px;
+}
+.click-here {
+  background-color: #D23D33; 
+  color: white;
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;       
+  text-align: center;
+}
+.subtopic1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+.happy-man-img {
+    width: 300px;
+    padding: 0px 0px 0px 20px;
+}
